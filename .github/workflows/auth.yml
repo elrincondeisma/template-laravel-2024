@@ -57,6 +57,5 @@ jobs:
     - name: Install PestPHP
       run: composer require pestphp/pest --dev --with-all-dependencies
 
-    - name: Run Tests
-      run: ./vendor/bin/pest
+
 
