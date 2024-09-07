@@ -43,8 +43,8 @@ jobs:
 
     - name: Updating values in the .envTest
       run: |
-        sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/' .env
-        sed -i 's/^DB_DATABASE=laravel/#DB_DATABASE=laravel/' .env
+        sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/' .envTest
+        sed -i 's/^DB_DATABASE=laravel/#DB_DATABASE=laravel/' .envTest
     - name: Copy .envTest to .env
       run: cp .envTest .env
 
